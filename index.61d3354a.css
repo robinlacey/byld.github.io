@@ -1,0 +1,2478 @@
+@import "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap";
+:root {
+  --grid-size: 44px;
+  --background-offset: 25px;
+  --grid-circle-radius: 3px;
+  --grid-circle-radius-alias: calc(var(--grid-circle-radius)  + -1px);
+  --grid-circle-diameter: calc(var(--grid-circle-radius) * 2);
+}
+
+.dot-grid-grey {
+  background: -moz-radial-gradient(circle at 50% 50%, #687178 0%, #687178 var(--grid-circle-radius-alias), #68717800 var(--grid-circle-radius), #68717800 100%);
+  background: -webkit-radial-gradient(circle at 50% 50%, #687178 0%, #687178 var(--grid-circle-radius-alias), #68717800 var(--grid-circle-radius), #68717800 100%);
+  background: -o-radial-gradient(circle at 50% 50%, #687178 0%, #687178 var(--grid-circle-radius-alias), #68717800 var(--grid-circle-radius), #68717800 100%);
+  background: -ms-radial-gradient(circle at 50% 50%, #687178 0%, #687178 var(--grid-circle-radius-alias), #68717800 var(--grid-circle-radius), #68717800 100%);
+  background: radial-gradient(circle at 50% 50%, #687178 0%, #687178 var(--grid-circle-radius-alias), #68717800 var(--grid-circle-radius), #68717800 100%);
+  background-position: var(--background-offset) var(--background-offset);
+  background-size: var(--grid-size) var(--grid-size);
+  height: cover;
+  width: 100%;
+}
+
+*, :before, :after, ::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: #3b82f680;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+  --tw-contain-style: ;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
+:before, :after {
+  --tw-content: "";
+}
+
+html, :host {
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  line-height: 1.5;
+}
+
+body {
+  line-height: inherit;
+  margin: 0;
+}
+
+hr {
+  color: inherit;
+  border-top-width: 1px;
+  height: 0;
+}
+
+abbr:where([title]) {
+  text-decoration: underline dotted;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp, pre {
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse;
+}
+
+button, input, optgroup, select, textarea {
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input:where([type="button"]), input:where([type="reset"]), input:where([type="submit"]) {
+  -webkit-appearance: button;
+  background-color: #0000;
+  background-image: none;
+}
+
+:-moz-focusring {
+  outline: auto;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol, ul, menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+dialog {
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::placeholder, textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+
+button, [role="button"] {
+  cursor: pointer;
+}
+
+:disabled {
+  cursor: default;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+  vertical-align: middle;
+  display: block;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+:root, [data-theme] {
+  background-color: var(--fallback-b1, oklch(var(--b1) / 1));
+  color: var(--fallback-bc, oklch(var(--bc) / 1));
+}
+
+@supports not (color: oklch(0% 0 0)) {
+  :root {
+    color-scheme: light;
+    --fallback-p: #491eff;
+    --fallback-pc: #d4dbff;
+    --fallback-s: #ff41c7;
+    --fallback-sc: #fff9fc;
+    --fallback-a: #00cfbd;
+    --fallback-ac: #00100d;
+    --fallback-n: #2b3440;
+    --fallback-nc: #d7dde4;
+    --fallback-b1: #fff;
+    --fallback-b2: #e5e6e6;
+    --fallback-b3: #e5e6e6;
+    --fallback-bc: #1f2937;
+    --fallback-in: #00b3f0;
+    --fallback-inc: #000;
+    --fallback-su: #00ca92;
+    --fallback-suc: #000;
+    --fallback-wa: #ffc22d;
+    --fallback-wac: #000;
+    --fallback-er: #ff6f70;
+    --fallback-erc: #000;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --fallback-p: #7582ff;
+      --fallback-pc: #050617;
+      --fallback-s: #ff71cf;
+      --fallback-sc: #190211;
+      --fallback-a: #00c7b5;
+      --fallback-ac: #000e0c;
+      --fallback-n: #2a323c;
+      --fallback-nc: #a6adbb;
+      --fallback-b1: #1d232a;
+      --fallback-b2: #191e24;
+      --fallback-b3: #15191e;
+      --fallback-bc: #a6adbb;
+      --fallback-in: #00b3f0;
+      --fallback-inc: #000;
+      --fallback-su: #00ca92;
+      --fallback-suc: #000;
+      --fallback-wa: #ffc22d;
+      --fallback-wac: #000;
+      --fallback-er: #ff6f70;
+      --fallback-erc: #000;
+    }
+  }
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  scrollbar-color: color-mix(in oklch, currentColor 35%, transparent) transparent;
+}
+
+:hover {
+  scrollbar-color: color-mix(in oklch, currentColor 60%, transparent) transparent;
+}
+
+html {
+  font-family: Space Grotesk, sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+@media (width >= 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (width >= 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (width >= 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (width >= 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+@media (hover: hover) {
+  .label a:hover {
+    --tw-text-opacity: 1;
+    color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));
+  }
+
+  .btm-nav > .disabled:hover, .btm-nav > [disabled]:hover {
+    pointer-events: none;
+    --tw-border-opacity: 0;
+    background-color: var(--fallback-n, oklch(var(--n) / var(--tw-bg-opacity)));
+    --tw-bg-opacity: .1;
+    color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));
+    --tw-text-opacity: .2;
+  }
+}
+
+.label {
+  -webkit-user-select: none;
+  user-select: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem .25rem;
+  display: flex;
+}
+
+.input {
+  appearance: none;
+  border-radius: var(--rounded-btn, .5rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
+  border-width: 1px;
+  border-color: #0000;
+  flex-shrink: 1;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.input[type="number"]::-webkit-inner-spin-button {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  margin-inline-end: -1rem;
+}
+
+.input-md[type="number"]::-webkit-inner-spin-button {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+  margin-inline-end: -1rem;
+}
+
+.join {
+  border-radius: var(--rounded-btn, .5rem);
+  align-items: stretch;
+  display: inline-flex;
+}
+
+.join :where(.join-item), .join .join-item:not(:first-child):not(:last-child), .join :not(:first-child):not(:last-child) .join-item {
+  border-start-start-radius: 0;
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+  border-end-start-radius: 0;
+}
+
+.join .join-item:first-child:not(:last-child), .join :first-child:not(:last-child) .join-item {
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+}
+
+.join .dropdown .join-item:first-child:not(:last-child), .join :first-child:not(:last-child) .dropdown .join-item {
+  border-start-end-radius: inherit;
+  border-end-end-radius: inherit;
+}
+
+.join :where(.join-item:first-child:not(:last-child)), .join :where(:first-child:not(:last-child) .join-item) {
+  border-start-start-radius: inherit;
+  border-end-start-radius: inherit;
+}
+
+.join .join-item:last-child:not(:first-child), .join :last-child:not(:first-child) .join-item {
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+}
+
+.join :where(.join-item:last-child:not(:first-child)), .join :where(:last-child:not(:first-child) .join-item) {
+  border-start-end-radius: inherit;
+  border-end-end-radius: inherit;
+}
+
+@supports not selector(:has(*)) {
+  :where(.join *) {
+    border-radius: inherit;
+  }
+}
+
+@supports selector(:has(*)) {
+  :where(.join :has(.join-item)) {
+    border-radius: inherit;
+  }
+}
+
+.link {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.menu li.disabled {
+  cursor: not-allowed;
+  -webkit-user-select: none;
+  user-select: none;
+  color: var(--fallback-bc, oklch(var(--bc) / .3));
+}
+
+.range {
+  cursor: pointer;
+  appearance: none;
+  --range-shdw: var(--fallback-bc, oklch(var(--bc) / 1));
+  border-radius: var(--rounded-box, 1rem);
+  background-color: #0000;
+  width: 100%;
+  height: 1.5rem;
+  overflow: hidden;
+}
+
+.range:focus {
+  outline: none;
+}
+
+.swap {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  place-content: center;
+  display: inline-grid;
+  position: relative;
+}
+
+.swap > * {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  transition-property: transform, opacity;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(0, 0, .2, 1);
+}
+
+.swap input {
+  appearance: none;
+}
+
+.swap .swap-on, .swap .swap-indeterminate, .swap input:indeterminate ~ .swap-on, .swap input:checked ~ .swap-off, .swap-active .swap-off, .swap input:indeterminate ~ .swap-off {
+  opacity: 0;
+}
+
+.swap input:checked ~ .swap-on, .swap-active .swap-on, .swap input:indeterminate ~ .swap-indeterminate {
+  opacity: 1;
+}
+
+.textarea {
+  border-radius: var(--rounded-btn, .5rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
+  border-width: 1px;
+  border-color: #0000;
+  flex-shrink: 1;
+  min-height: 3rem;
+  padding: .5rem 1rem;
+  font-size: .875rem;
+  line-height: 2;
+}
+
+.btm-nav > .disabled, .btm-nav > [disabled] {
+  pointer-events: none;
+  --tw-border-opacity: 0;
+  background-color: var(--fallback-n, oklch(var(--n) / var(--tw-bg-opacity)));
+  --tw-bg-opacity: .1;
+  color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));
+  --tw-text-opacity: .2;
+}
+
+.btm-nav > * .label {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@keyframes button-pop {
+  0% {
+    transform: scale(var(--btn-focus-scale, .98));
+  }
+
+  40% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    background-position-y: 5px;
+  }
+
+  50% {
+    background-position-y: -2px;
+  }
+
+  100% {
+    background-position-y: 0;
+  }
+}
+
+.input input {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-p, oklch(var(--p) / var(--tw-bg-opacity)));
+  background-color: #0000;
+}
+
+.input input:focus {
+  outline-offset: 2px;
+  outline: 2px solid #0000;
+}
+
+.input[list]::-webkit-calendar-picker-indicator {
+  line-height: 1em;
+}
+
+.input:focus, .input:focus-within {
+  box-shadow: none;
+  border-color: var(--fallback-bc, oklch(var(--bc) / .2));
+  outline-offset: 2px;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--fallback-bc, oklch(var(--bc) / .2));
+}
+
+.input:has( > input[disabled]), .input-disabled, .input:disabled, .input[disabled] {
+  cursor: not-allowed;
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-b2, oklch(var(--b2) / var(--tw-border-opacity)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2, oklch(var(--b2) / var(--tw-bg-opacity)));
+  color: var(--fallback-bc, oklch(var(--bc) / .4));
+}
+
+.input:has( > input[disabled])::placeholder, .input-disabled::placeholder, .input:disabled::placeholder, .input[disabled]::placeholder {
+  color: var(--fallback-bc, oklch(var(--bc) / var(--tw-placeholder-opacity)));
+  --tw-placeholder-opacity: .2;
+}
+
+.input:has( > input[disabled]) > input[disabled] {
+  cursor: not-allowed;
+}
+
+.input::-webkit-date-and-time-value {
+  text-align: inherit;
+}
+
+.join > :where(:not(:first-child)) {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-inline-start: -1px;
+}
+
+.join > :where(:not(:first-child)).btn {
+  margin-inline-start: calc(var(--border-btn) * -1);
+}
+
+.link:focus {
+  outline-offset: 2px;
+  outline: 2px solid #0000;
+}
+
+.link:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid;
+}
+
+.mockup-phone .display {
+  border-radius: 40px;
+  margin-top: -25px;
+  overflow: hidden;
+}
+
+.mockup-browser .mockup-browser-toolbar .input {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2, oklch(var(--b2) / var(--tw-bg-opacity)));
+  direction: ltr;
+  width: 24rem;
+  height: 1.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.mockup-browser .mockup-browser-toolbar .input:before {
+  content: "";
+  aspect-ratio: 1;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: .6;
+  border-width: 2px;
+  border-color: currentColor;
+  border-radius: 9999px;
+  height: .75rem;
+  position: absolute;
+  top: 50%;
+  left: .5rem;
+}
+
+.mockup-browser .mockup-browser-toolbar .input:after {
+  content: "";
+  --tw-translate-y: 25%;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: .6;
+  border-width: 1px;
+  border-color: currentColor;
+  border-radius: 9999px;
+  height: .5rem;
+  position: absolute;
+  top: 50%;
+  left: 1.25rem;
+}
+
+@keyframes modal-pop {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes progress-loading {
+  50% {
+    background-position-x: -115%;
+  }
+}
+
+@keyframes radiomark {
+  0% {
+    box-shadow: 0 0 0 12px var(--fallback-b1, oklch(var(--b1) / 1)) inset, 0 0 0 12px var(--fallback-b1, oklch(var(--b1) / 1)) inset;
+  }
+
+  50% {
+    box-shadow: 0 0 0 3px var(--fallback-b1, oklch(var(--b1) / 1)) inset, 0 0 0 3px var(--fallback-b1, oklch(var(--b1) / 1)) inset;
+  }
+
+  100% {
+    box-shadow: 0 0 0 4px var(--fallback-b1, oklch(var(--b1) / 1)) inset, 0 0 0 4px var(--fallback-b1, oklch(var(--b1) / 1)) inset;
+  }
+}
+
+.range:focus-visible::-webkit-slider-thumb {
+  --focus-shadow: 0 0 0 6px var(--fallback-b1, oklch(var(--b1) / 1)) inset, 0 0 0 2rem var(--range-shdw) inset;
+}
+
+.range:focus-visible::-moz-range-thumb {
+  --focus-shadow: 0 0 0 6px var(--fallback-b1, oklch(var(--b1) / 1)) inset, 0 0 0 2rem var(--range-shdw) inset;
+}
+
+.range::-webkit-slider-runnable-track {
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc, oklch(var(--bc) / .1));
+  width: 100%;
+  height: .5rem;
+}
+
+.range::-moz-range-track {
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc, oklch(var(--bc) / .1));
+  width: 100%;
+  height: .5rem;
+}
+
+.range::-webkit-slider-thumb {
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
+  appearance: none;
+  color: var(--range-shdw);
+  --filler-size: 100rem;
+  --filler-offset: .6rem;
+  box-shadow: 0 0 0 3px var(--range-shdw) inset, var(--focus-shadow, 0 0), calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+  border-style: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.range::-moz-range-thumb {
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
+  color: var(--range-shdw);
+  --filler-size: 100rem;
+  --filler-offset: .5rem;
+  box-shadow: 0 0 0 3px var(--range-shdw) inset, var(--focus-shadow, 0 0), calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+  border-style: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  top: 50%;
+}
+
+@keyframes rating-pop {
+  0% {
+    transform: translateY(-.125em);
+  }
+
+  40% {
+    transform: translateY(-.125em);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes skeleton {
+  from {
+    background-position: 150%;
+  }
+
+  to {
+    background-position: -50%;
+  }
+}
+
+.textarea:focus {
+  box-shadow: none;
+  border-color: var(--fallback-bc, oklch(var(--bc) / .2));
+  outline-offset: 2px;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: var(--fallback-bc, oklch(var(--bc) / .2));
+}
+
+.textarea-disabled, .textarea:disabled, .textarea[disabled] {
+  cursor: not-allowed;
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-b2, oklch(var(--b2) / var(--tw-border-opacity)));
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b2, oklch(var(--b2) / var(--tw-bg-opacity)));
+  color: var(--fallback-bc, oklch(var(--bc) / .4));
+}
+
+.textarea-disabled::placeholder, .textarea:disabled::placeholder, .textarea[disabled]::placeholder {
+  color: var(--fallback-bc, oklch(var(--bc) / var(--tw-placeholder-opacity)));
+  --tw-placeholder-opacity: .2;
+}
+
+@keyframes toast-pop {
+  0% {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.join.join-vertical {
+  flex-direction: column;
+}
+
+.join.join-vertical .join-item:first-child:not(:last-child), .join.join-vertical :first-child:not(:last-child) .join-item {
+  border-start-start-radius: inherit;
+  border-start-end-radius: inherit;
+  border-end-end-radius: 0;
+  border-end-start-radius: 0;
+}
+
+.join.join-vertical .join-item:last-child:not(:first-child), .join.join-vertical :last-child:not(:first-child) .join-item {
+  border-start-start-radius: 0;
+  border-start-end-radius: 0;
+  border-end-end-radius: inherit;
+  border-end-start-radius: inherit;
+}
+
+.join.join-horizontal {
+  flex-direction: row;
+}
+
+.join.join-horizontal .join-item:first-child:not(:last-child), .join.join-horizontal :first-child:not(:last-child) .join-item {
+  border-start-start-radius: inherit;
+  border-start-end-radius: 0;
+  border-end-end-radius: 0;
+  border-end-start-radius: inherit;
+}
+
+.join.join-horizontal .join-item:last-child:not(:first-child), .join.join-horizontal :last-child:not(:first-child) .join-item {
+  border-start-start-radius: 0;
+  border-start-end-radius: inherit;
+  border-end-end-radius: inherit;
+  border-end-start-radius: 0;
+}
+
+.join.join-vertical > :where(:not(:first-child)) {
+  margin-top: -1px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.join.join-vertical > :where(:not(:first-child)).btn {
+  margin-top: calc(var(--border-btn) * -1);
+}
+
+.join.join-horizontal > :where(:not(:first-child)) {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-inline-start: -1px;
+}
+
+.join.join-horizontal > :where(:not(:first-child)).btn {
+  margin-inline-start: calc(var(--border-btn) * -1);
+  margin-top: 0;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mb-1 {
+  margin-bottom: .25rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.ml-2 {
+  margin-left: .5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mr-2 {
+  margin-right: .5rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-52 {
+  height: 13rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.min-h-\[400px\] {
+  min-height: 400px;
+}
+
+.min-h-\[75px\] {
+  min-height: 75px;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-1\/3 {
+  width: 33.3333%;
+}
+
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-5\/6 {
+  width: 83.3333%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.columns-3 {
+  columns: 3;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.content-around {
+  align-content: space-around;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.25rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.rounded {
+  border-radius: .25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-byldGold {
+  --tw-border-opacity: 1;
+  border-color: rgb(197 163 124 / var(--tw-border-opacity));
+}
+
+.border-byldGold\/0 {
+  border-color: #c5a37c00;
+}
+
+.border-byldGold\/10 {
+  border-color: #c5a37c1a;
+}
+
+.border-byldGold\/100 {
+  border-color: #c5a37c;
+}
+
+.border-byldGold\/15 {
+  border-color: #c5a37c26;
+}
+
+.border-byldGold\/20 {
+  border-color: #c5a37c33;
+}
+
+.border-byldGold\/25 {
+  border-color: #c5a37c40;
+}
+
+.border-byldGold\/30 {
+  border-color: #c5a37c4d;
+}
+
+.border-byldGold\/35 {
+  border-color: #c5a37c59;
+}
+
+.border-byldGold\/40 {
+  border-color: #c5a37c66;
+}
+
+.border-byldGold\/45 {
+  border-color: #c5a37c73;
+}
+
+.border-byldGold\/5 {
+  border-color: #c5a37c0d;
+}
+
+.border-byldGold\/50 {
+  border-color: #c5a37c80;
+}
+
+.border-byldGold\/55 {
+  border-color: #c5a37c8c;
+}
+
+.border-byldGold\/60 {
+  border-color: #c5a37c99;
+}
+
+.border-byldGold\/65 {
+  border-color: #c5a37ca6;
+}
+
+.border-byldGold\/70 {
+  border-color: #c5a37cb3;
+}
+
+.border-byldGold\/75 {
+  border-color: #c5a37cbf;
+}
+
+.border-byldGold\/80 {
+  border-color: #c5a37ccc;
+}
+
+.border-byldGold\/85 {
+  border-color: #c5a37cd9;
+}
+
+.border-byldGold\/90 {
+  border-color: #c5a37ce6;
+}
+
+.border-byldGold\/95 {
+  border-color: #c5a37cf2;
+}
+
+.border-byldGray {
+  --tw-border-opacity: 1;
+  border-color: rgb(104 113 120 / var(--tw-border-opacity));
+}
+
+.border-byldGray\/0 {
+  border-color: #68717800;
+}
+
+.border-byldGray\/10 {
+  border-color: #6871781a;
+}
+
+.border-byldGray\/100 {
+  border-color: #687178;
+}
+
+.border-byldGray\/15 {
+  border-color: #68717826;
+}
+
+.border-byldGray\/20 {
+  border-color: #68717833;
+}
+
+.border-byldGray\/25 {
+  border-color: #68717840;
+}
+
+.border-byldGray\/30 {
+  border-color: #6871784d;
+}
+
+.border-byldGray\/35 {
+  border-color: #68717859;
+}
+
+.border-byldGray\/40 {
+  border-color: #68717866;
+}
+
+.border-byldGray\/45 {
+  border-color: #68717873;
+}
+
+.border-byldGray\/5 {
+  border-color: #6871780d;
+}
+
+.border-byldGray\/50 {
+  border-color: #68717880;
+}
+
+.border-byldGray\/55 {
+  border-color: #6871788c;
+}
+
+.border-byldGray\/60 {
+  border-color: #68717899;
+}
+
+.border-byldGray\/65 {
+  border-color: #687178a6;
+}
+
+.border-byldGray\/70 {
+  border-color: #687178b3;
+}
+
+.border-byldGray\/75 {
+  border-color: #687178bf;
+}
+
+.border-byldGray\/80 {
+  border-color: #687178cc;
+}
+
+.border-byldGray\/85 {
+  border-color: #687178d9;
+}
+
+.border-byldGray\/90 {
+  border-color: #687178e6;
+}
+
+.border-byldGray\/95 {
+  border-color: #687178f2;
+}
+
+.border-byldNavyPurple {
+  --tw-border-opacity: 1;
+  border-color: rgb(40 37 56 / var(--tw-border-opacity));
+}
+
+.border-byldNavyPurple\/0 {
+  border-color: #28253800;
+}
+
+.border-byldNavyPurple\/10 {
+  border-color: #2825381a;
+}
+
+.border-byldNavyPurple\/100 {
+  border-color: #282538;
+}
+
+.border-byldNavyPurple\/15 {
+  border-color: #28253826;
+}
+
+.border-byldNavyPurple\/20 {
+  border-color: #28253833;
+}
+
+.border-byldNavyPurple\/25 {
+  border-color: #28253840;
+}
+
+.border-byldNavyPurple\/30 {
+  border-color: #2825384d;
+}
+
+.border-byldNavyPurple\/35 {
+  border-color: #28253859;
+}
+
+.border-byldNavyPurple\/40 {
+  border-color: #28253866;
+}
+
+.border-byldNavyPurple\/45 {
+  border-color: #28253873;
+}
+
+.border-byldNavyPurple\/5 {
+  border-color: #2825380d;
+}
+
+.border-byldNavyPurple\/50 {
+  border-color: #28253880;
+}
+
+.border-byldNavyPurple\/55 {
+  border-color: #2825388c;
+}
+
+.border-byldNavyPurple\/60 {
+  border-color: #28253899;
+}
+
+.border-byldNavyPurple\/65 {
+  border-color: #282538a6;
+}
+
+.border-byldNavyPurple\/70 {
+  border-color: #282538b3;
+}
+
+.border-byldNavyPurple\/75 {
+  border-color: #282538bf;
+}
+
+.border-byldNavyPurple\/80 {
+  border-color: #282538cc;
+}
+
+.border-byldNavyPurple\/85 {
+  border-color: #282538d9;
+}
+
+.border-byldNavyPurple\/90 {
+  border-color: #282538e6;
+}
+
+.border-byldNavyPurple\/95 {
+  border-color: #282538f2;
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-byldGold {
+  --tw-bg-opacity: 1;
+  background-color: rgb(197 163 124 / var(--tw-bg-opacity));
+}
+
+.bg-byldGold\/0 {
+  background-color: #c5a37c00;
+}
+
+.bg-byldGold\/10 {
+  background-color: #c5a37c1a;
+}
+
+.bg-byldGold\/100 {
+  background-color: #c5a37c;
+}
+
+.bg-byldGold\/15 {
+  background-color: #c5a37c26;
+}
+
+.bg-byldGold\/20 {
+  background-color: #c5a37c33;
+}
+
+.bg-byldGold\/25 {
+  background-color: #c5a37c40;
+}
+
+.bg-byldGold\/30 {
+  background-color: #c5a37c4d;
+}
+
+.bg-byldGold\/35 {
+  background-color: #c5a37c59;
+}
+
+.bg-byldGold\/40 {
+  background-color: #c5a37c66;
+}
+
+.bg-byldGold\/45 {
+  background-color: #c5a37c73;
+}
+
+.bg-byldGold\/5 {
+  background-color: #c5a37c0d;
+}
+
+.bg-byldGold\/50 {
+  background-color: #c5a37c80;
+}
+
+.bg-byldGold\/55 {
+  background-color: #c5a37c8c;
+}
+
+.bg-byldGold\/60 {
+  background-color: #c5a37c99;
+}
+
+.bg-byldGold\/65 {
+  background-color: #c5a37ca6;
+}
+
+.bg-byldGold\/70 {
+  background-color: #c5a37cb3;
+}
+
+.bg-byldGold\/75 {
+  background-color: #c5a37cbf;
+}
+
+.bg-byldGold\/80 {
+  background-color: #c5a37ccc;
+}
+
+.bg-byldGold\/85 {
+  background-color: #c5a37cd9;
+}
+
+.bg-byldGold\/90 {
+  background-color: #c5a37ce6;
+}
+
+.bg-byldGold\/95 {
+  background-color: #c5a37cf2;
+}
+
+.bg-byldGray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(104 113 120 / var(--tw-bg-opacity));
+}
+
+.bg-byldGray\/0 {
+  background-color: #68717800;
+}
+
+.bg-byldGray\/10 {
+  background-color: #6871781a;
+}
+
+.bg-byldGray\/100 {
+  background-color: #687178;
+}
+
+.bg-byldGray\/15 {
+  background-color: #68717826;
+}
+
+.bg-byldGray\/20 {
+  background-color: #68717833;
+}
+
+.bg-byldGray\/25 {
+  background-color: #68717840;
+}
+
+.bg-byldGray\/30 {
+  background-color: #6871784d;
+}
+
+.bg-byldGray\/35 {
+  background-color: #68717859;
+}
+
+.bg-byldGray\/40 {
+  background-color: #68717866;
+}
+
+.bg-byldGray\/45 {
+  background-color: #68717873;
+}
+
+.bg-byldGray\/5 {
+  background-color: #6871780d;
+}
+
+.bg-byldGray\/50 {
+  background-color: #68717880;
+}
+
+.bg-byldGray\/55 {
+  background-color: #6871788c;
+}
+
+.bg-byldGray\/60 {
+  background-color: #68717899;
+}
+
+.bg-byldGray\/65 {
+  background-color: #687178a6;
+}
+
+.bg-byldGray\/70 {
+  background-color: #687178b3;
+}
+
+.bg-byldGray\/75 {
+  background-color: #687178bf;
+}
+
+.bg-byldGray\/80 {
+  background-color: #687178cc;
+}
+
+.bg-byldGray\/85 {
+  background-color: #687178d9;
+}
+
+.bg-byldGray\/90 {
+  background-color: #687178e6;
+}
+
+.bg-byldGray\/95 {
+  background-color: #687178f2;
+}
+
+.bg-byldNavyPurple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 37 56 / var(--tw-bg-opacity));
+}
+
+.bg-byldNavyPurple\/0 {
+  background-color: #28253800;
+}
+
+.bg-byldNavyPurple\/10 {
+  background-color: #2825381a;
+}
+
+.bg-byldNavyPurple\/100 {
+  background-color: #282538;
+}
+
+.bg-byldNavyPurple\/15 {
+  background-color: #28253826;
+}
+
+.bg-byldNavyPurple\/20 {
+  background-color: #28253833;
+}
+
+.bg-byldNavyPurple\/25 {
+  background-color: #28253840;
+}
+
+.bg-byldNavyPurple\/30 {
+  background-color: #2825384d;
+}
+
+.bg-byldNavyPurple\/35 {
+  background-color: #28253859;
+}
+
+.bg-byldNavyPurple\/40 {
+  background-color: #28253866;
+}
+
+.bg-byldNavyPurple\/45 {
+  background-color: #28253873;
+}
+
+.bg-byldNavyPurple\/5 {
+  background-color: #2825380d;
+}
+
+.bg-byldNavyPurple\/50 {
+  background-color: #28253880;
+}
+
+.bg-byldNavyPurple\/55 {
+  background-color: #2825388c;
+}
+
+.bg-byldNavyPurple\/60 {
+  background-color: #28253899;
+}
+
+.bg-byldNavyPurple\/65 {
+  background-color: #282538a6;
+}
+
+.bg-byldNavyPurple\/70 {
+  background-color: #282538b3;
+}
+
+.bg-byldNavyPurple\/75 {
+  background-color: #282538bf;
+}
+
+.bg-byldNavyPurple\/80 {
+  background-color: #282538cc;
+}
+
+.bg-byldNavyPurple\/85 {
+  background-color: #282538d9;
+}
+
+.bg-byldNavyPurple\/90 {
+  background-color: #282538e6;
+}
+
+.bg-byldNavyPurple\/95 {
+  background-color: #282538f2;
+}
+
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 34 41 / var(--tw-bg-opacity));
+}
+
+.bg-dark-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 59 66 / var(--tw-bg-opacity));
+}
+
+.bg-frost {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 239 246 / var(--tw-bg-opacity));
+}
+
+.bg-light-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(154 193 246 / var(--tw-bg-opacity));
+}
+
+.bg-mint {
+  --tw-bg-opacity: 1;
+  background-color: rgb(154 232 207 / var(--tw-bg-opacity));
+}
+
+.bg-navy {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 29 65 / var(--tw-bg-opacity));
+}
+
+.bg-ogre {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 125 102 / var(--tw-bg-opacity));
+}
+
+.bg-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 145 100 / var(--tw-bg-opacity));
+}
+
+.bg-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 136 255 / var(--tw-bg-opacity));
+}
+
+.bg-swamp {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 174 152 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-1 {
+  padding: .25rem;
+}
+
+.p-2 {
+  padding: .5rem;
+}
+
+.p-3 {
+  padding: .75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-3 {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+.py-1 {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+.pb-1 {
+  padding-bottom: .25rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-36 {
+  padding-bottom: 9rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pl-0\.5 {
+  padding-left: .125rem;
+}
+
+.pr-16 {
+  padding-right: 4rem;
+}
+
+.pr-2 {
+  padding-right: .5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.align-text-top {
+  vertical-align: text-top;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: .875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.leading-tight {
+  line-height: 1.25;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-byldGold {
+  --tw-text-opacity: 1;
+  color: rgb(197 163 124 / var(--tw-text-opacity));
+}
+
+.text-byldGold\/0 {
+  color: #c5a37c00;
+}
+
+.text-byldGold\/10 {
+  color: #c5a37c1a;
+}
+
+.text-byldGold\/100 {
+  color: #c5a37c;
+}
+
+.text-byldGold\/15 {
+  color: #c5a37c26;
+}
+
+.text-byldGold\/20 {
+  color: #c5a37c33;
+}
+
+.text-byldGold\/25 {
+  color: #c5a37c40;
+}
+
+.text-byldGold\/30 {
+  color: #c5a37c4d;
+}
+
+.text-byldGold\/35 {
+  color: #c5a37c59;
+}
+
+.text-byldGold\/40 {
+  color: #c5a37c66;
+}
+
+.text-byldGold\/45 {
+  color: #c5a37c73;
+}
+
+.text-byldGold\/5 {
+  color: #c5a37c0d;
+}
+
+.text-byldGold\/50 {
+  color: #c5a37c80;
+}
+
+.text-byldGold\/55 {
+  color: #c5a37c8c;
+}
+
+.text-byldGold\/60 {
+  color: #c5a37c99;
+}
+
+.text-byldGold\/65 {
+  color: #c5a37ca6;
+}
+
+.text-byldGold\/70 {
+  color: #c5a37cb3;
+}
+
+.text-byldGold\/75 {
+  color: #c5a37cbf;
+}
+
+.text-byldGold\/80 {
+  color: #c5a37ccc;
+}
+
+.text-byldGold\/85 {
+  color: #c5a37cd9;
+}
+
+.text-byldGold\/90 {
+  color: #c5a37ce6;
+}
+
+.text-byldGold\/95 {
+  color: #c5a37cf2;
+}
+
+.text-byldGray {
+  --tw-text-opacity: 1;
+  color: rgb(104 113 120 / var(--tw-text-opacity));
+}
+
+.text-byldGray\/0 {
+  color: #68717800;
+}
+
+.text-byldGray\/10 {
+  color: #6871781a;
+}
+
+.text-byldGray\/100 {
+  color: #687178;
+}
+
+.text-byldGray\/15 {
+  color: #68717826;
+}
+
+.text-byldGray\/20 {
+  color: #68717833;
+}
+
+.text-byldGray\/25 {
+  color: #68717840;
+}
+
+.text-byldGray\/30 {
+  color: #6871784d;
+}
+
+.text-byldGray\/35 {
+  color: #68717859;
+}
+
+.text-byldGray\/40 {
+  color: #68717866;
+}
+
+.text-byldGray\/45 {
+  color: #68717873;
+}
+
+.text-byldGray\/5 {
+  color: #6871780d;
+}
+
+.text-byldGray\/50 {
+  color: #68717880;
+}
+
+.text-byldGray\/55 {
+  color: #6871788c;
+}
+
+.text-byldGray\/60 {
+  color: #68717899;
+}
+
+.text-byldGray\/65 {
+  color: #687178a6;
+}
+
+.text-byldGray\/70 {
+  color: #687178b3;
+}
+
+.text-byldGray\/75 {
+  color: #687178bf;
+}
+
+.text-byldGray\/80 {
+  color: #687178cc;
+}
+
+.text-byldGray\/85 {
+  color: #687178d9;
+}
+
+.text-byldGray\/90 {
+  color: #687178e6;
+}
+
+.text-byldGray\/95 {
+  color: #687178f2;
+}
+
+.text-byldLightGray {
+  --tw-text-opacity: 1;
+  color: rgb(209 220 227 / var(--tw-text-opacity));
+}
+
+.text-byldNavyPurple {
+  --tw-text-opacity: 1;
+  color: rgb(40 37 56 / var(--tw-text-opacity));
+}
+
+.text-byldNavyPurple\/0 {
+  color: #28253800;
+}
+
+.text-byldNavyPurple\/10 {
+  color: #2825381a;
+}
+
+.text-byldNavyPurple\/100 {
+  color: #282538;
+}
+
+.text-byldNavyPurple\/15 {
+  color: #28253826;
+}
+
+.text-byldNavyPurple\/20 {
+  color: #28253833;
+}
+
+.text-byldNavyPurple\/25 {
+  color: #28253840;
+}
+
+.text-byldNavyPurple\/30 {
+  color: #2825384d;
+}
+
+.text-byldNavyPurple\/35 {
+  color: #28253859;
+}
+
+.text-byldNavyPurple\/40 {
+  color: #28253866;
+}
+
+.text-byldNavyPurple\/45 {
+  color: #28253873;
+}
+
+.text-byldNavyPurple\/5 {
+  color: #2825380d;
+}
+
+.text-byldNavyPurple\/50 {
+  color: #28253880;
+}
+
+.text-byldNavyPurple\/55 {
+  color: #2825388c;
+}
+
+.text-byldNavyPurple\/60 {
+  color: #28253899;
+}
+
+.text-byldNavyPurple\/65 {
+  color: #282538a6;
+}
+
+.text-byldNavyPurple\/70 {
+  color: #282538b3;
+}
+
+.text-byldNavyPurple\/75 {
+  color: #282538bf;
+}
+
+.text-byldNavyPurple\/80 {
+  color: #282538cc;
+}
+
+.text-byldNavyPurple\/85 {
+  color: #282538d9;
+}
+
+.text-byldNavyPurple\/90 {
+  color: #282538e6;
+}
+
+.text-byldNavyPurple\/95 {
+  color: #282538f2;
+}
+
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(26 34 41 / var(--tw-text-opacity));
+}
+
+.text-dark-blue {
+  --tw-text-opacity: 1;
+  color: rgb(51 59 66 / var(--tw-text-opacity));
+}
+
+.text-light-blue {
+  --tw-text-opacity: 1;
+  color: rgb(154 193 246 / var(--tw-text-opacity));
+}
+
+.text-navy {
+  --tw-text-opacity: 1;
+  color: rgb(0 29 65 / var(--tw-text-opacity));
+}
+
+.text-orange {
+  --tw-text-opacity: 1;
+  color: rgb(230 145 100 / var(--tw-text-opacity));
+}
+
+.text-purple {
+  --tw-text-opacity: 1;
+  color: rgb(119 136 255 / var(--tw-text-opacity));
+}
+
+.text-swamp {
+  --tw-text-opacity: 1;
+  color: rgb(96 174 152 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.decoration-orange {
+  text-decoration-color: #e69164;
+}
+
+.decoration-4 {
+  text-decoration-thickness: 4px;
+}
+
+.underline-offset-8 {
+  text-underline-offset: 8px;
+}
+
+.outline {
+  outline-style: solid;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-duration: .15s;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(.4, 0, 1, 1);
+}
+
+.bg-building {
+  background-image: url("ed-robertson.3fc85708.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-swirl-4 {
+  background-image: url("pawel-czerwinski.49fe98d4.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-swirl {
+  background-image: url("swirl-1.a1310d65.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.swirls {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swirls:before {
+  content: "";
+  z-index: -1;
+  background-size: cover;
+  transition: all 1s;
+  position: absolute;
+  inset: 0;
+}
+
+.swirls-0:before {
+  clip-path: polygon(calc(var(--grid-size) * 40 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)), calc(var(--grid-size) * 40 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 36 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 36 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 30 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 30 + var(--grid-circle-radius)) calc(var(--grid-size) * 12 + var(--grid-circle-radius)), calc(var(--grid-size) * 16 + var(--grid-circle-radius)) calc(var(--grid-size) * 12 + var(--grid-circle-radius)), calc(var(--grid-size) * 16 + var(--grid-circle-radius)) calc(var(--grid-size) * 2 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 2 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)));
+  background-image: url("swirl-0.47ced0fe.jpg");
+}
+
+.swirls-1:before {
+  clip-path: polygon(calc(var(--grid-size) * 40 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)), calc(var(--grid-size) * 40 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 25 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 25 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 20 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 20 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)), calc(var(--grid-size) * 20 + var(--grid-circle-radius)) calc(var(--grid-size) * 2 + var(--grid-circle-radius)), calc(var(--grid-size) * 15 + var(--grid-circle-radius)) calc(var(--grid-size) * 2 + var(--grid-circle-radius)), calc(var(--grid-size) * 15 + var(--grid-circle-radius)) calc(var(--grid-size) * 13 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 13 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 5 + var(--grid-circle-radius)));
+  background-image: url("andrei-caliman.b12a6abf.jpg");
+}
+
+.swirls-2:before {
+  clip-path: polygon(calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 19 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 19 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 32 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 32 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 36 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 36 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 41 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 41 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)));
+  background-image: url("swirl-2.a6b4c66f.jpg");
+}
+
+.swirls-3:before {
+  clip-path: polygon(calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 30 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 30 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)), calc(var(--grid-size) * 18 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)), calc(var(--grid-size) * 18 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)));
+  background-image: url("abel-perez.297217f4.jpg");
+}
+
+.swirls-4:before {
+  clip-path: polygon(calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 4 + var(--grid-circle-radius)), calc(var(--grid-size) * 6 + var(--grid-circle-radius)) calc(var(--grid-size) * 4 + var(--grid-circle-radius)), calc(var(--grid-size) * 6 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 14 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 14 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)), calc(var(--grid-size) * 22 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 26 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 26 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)), calc(var(--grid-size) * 26 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)), calc(var(--grid-size) * 26 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)), calc(var(--grid-size) * 26 + var(--grid-circle-radius)) calc(var(--grid-size) * 7 + var(--grid-circle-radius)));
+  background-image: url("abel-perez.297217f4.jpg");
+}
+
+@media screen and (width <= 640px) {
+  .swirls-0:before {
+    clip-path: polygon(calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 5 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 5 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 5 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 5 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 5 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 5 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 5 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 5 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 2 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 2 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)));
+    background-image: url("swirl-0.47ced0fe.jpg");
+  }
+
+  .swirls-1:before {
+    clip-path: polygon(calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)));
+    background-image: url("andrei-caliman.b12a6abf.jpg");
+  }
+
+  .swirls-2:before {
+    clip-path: polygon(calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 2 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 2 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 3 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 8 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)));
+    background-image: url("swirl-2.a6b4c66f.jpg");
+  }
+
+  .swirls-3:before {
+    clip-path: polygon(calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 9 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 9 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 4 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 4 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 4 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 4 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 4 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 4 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 4 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 4 + var(--grid-circle-radius)) calc(var(--grid-size) * 9 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 9 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 9 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 10 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 3 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 11 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)));
+    background-image: url("abel-perez.297217f4.jpg");
+  }
+
+  .swirls-4:before {
+    clip-path: polygon(calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 0 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 11 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 8 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 2 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 7 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 0 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 1 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)), calc(var(--grid-size) * 10 + var(--grid-circle-radius)) calc(var(--grid-size) * 6 + var(--grid-circle-radius)));
+    background-image: url("abel-perez.297217f4.jpg");
+  }
+}
+
+.headerBanner {
+  height: calc(var(--grid-size) * 12);
+}
+
+.page-enter {
+  opacity: 0;
+}
+
+.page-enter-active {
+  opacity: 1;
+  transition: all 1s ease-out;
+}
+
+.page-exit {
+  transform: translateX(0);
+}
+
+.page-exit-active {
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+
+.header-transition-enter {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.header-transition-enter-active {
+  opacity: 1;
+  transition: opacity .3s, transform .3s;
+  transform: scale(1);
+}
+
+.header-transition-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.header-transition-exit-active {
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+  transform: scale(.9);
+}
+
+.list-dash {
+  list-style-type: none;
+}
+
+.list-dash li {
+  padding-left: 1em;
+}
+
+.list-dash li:before {
+  content: "-";
+  margin-left: -20px;
+  position: absolute;
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-ogre-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(72 89 68 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-orange-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 105 43 / var(--tw-bg-opacity));
+}
+
+.hover\:text-dark:hover {
+  --tw-text-opacity: 1;
+  color: rgb(26 34 41 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:decoration-dotted:hover {
+  text-decoration-style: dotted;
+}
+
+@media (width >= 640px) {
+  .sm\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .sm\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:w-3\/4 {
+    width: 75%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
+  }
+
+  .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .sm\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .sm\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .sm\:pb-16 {
+    padding-bottom: 4rem;
+  }
+
+  .sm\:pb-32 {
+    padding-bottom: 8rem;
+  }
+
+  .sm\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (width >= 768px) {
+  .md\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:w-1\/3 {
+    width: 33.3333%;
+  }
+
+  .md\:w-2\/3 {
+    width: 66.6667%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1rem * var(--tw-space-x-reverse));
+    margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+}
+
+@media (width >= 1024px) {
+  .lg\:w-3\/5 {
+    width: 60%;
+  }
+
+  .lg\:w-4\/5 {
+    width: 80%;
+  }
+
+  .lg\:pl-44 {
+    padding-left: 11rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (width >= 1280px) {
+  .xl\:w-1\/3 {
+    width: 33.3333%;
+  }
+
+  .xl\:w-2\/3 {
+    width: 66.6667%;
+  }
+
+  .xl\:p-0 {
+    padding: 0;
+  }
+}
+
+@media (width >= 1536px) {
+  .\32 xl\:w-1\/2 {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=index.61d3354a.css.map */
