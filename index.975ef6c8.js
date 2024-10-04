@@ -27327,7 +27327,7 @@ const routes = [
             title: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerTitle.HeaderTitle), {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: "Solving real estate data problems"
+                        children: "Solving enterprise data problems"
                     }, void 0, false, {
                         fileName: "src/App.js",
                         lineNumber: 56,
@@ -27453,7 +27453,7 @@ const routes = [
         header: {
             title: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerTitle.HeaderTitle), {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "Bringing trust & confidence to real estate data"
+                    children: "Bringing trust & confidence to enterprise data"
                 }, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 118,
@@ -27499,7 +27499,7 @@ const routes = [
         header: {
             title: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerTitle.HeaderTitle), {
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                    children: "Working with the next generation of property professionals"
+                    children: "Working with the next generation of data driven professionals"
                 }, void 0, false, {
                     fileName: "src/App.js",
                     lineNumber: 146,
@@ -38168,7 +38168,7 @@ const Products = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     className: "font-semibold text-purple pb-1",
-                                                    children: "Automated real estate ESG data"
+                                                    children: "Automated ESG data"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Products/index.js",
                                                     lineNumber: 25,
@@ -38283,7 +38283,7 @@ const Products = ()=>{
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                                     className: "font-semibold pb-1",
-                                                    children: "A data layer for commercial real estate"
+                                                    children: "A city scale data layer for commercial real estate"
                                                 }, void 0, false, {
                                                     fileName: "src/pages/Products/index.js",
                                                     lineNumber: 57,
@@ -38534,7 +38534,7 @@ const AboutContent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _centered.
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "bg-white p-1 mb-8",
-                        children: "The real estate sector relies heavily on outdated systems, restricted SaaS platforms and oceans of spreadsheets. Not only is the data difficult to acquire but also difficult to rely on."
+                        children: "Enterprise organisations rely heavily on outdated systems, restricted SaaS platforms and oceans of spreadsheets. Not only is the data difficult to acquire but also difficult to rely on."
                     }, void 0, false, {
                         fileName: "src/pages/AboutUs/index.js",
                         lineNumber: 12,
@@ -38558,7 +38558,7 @@ const AboutContent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _centered.
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         className: "bg-white p-1 mb-8",
-                        children: "We are a team of data experts with a proven history of solving intricate data-related issues within real estate as well as other complex sectors ranging from government to financial services."
+                        children: "We are a team of data experts with a proven history of solving intricate data-related issues within complex sectors ranging from government to financial services."
                     }, void 0, false, {
                         fileName: "src/pages/AboutUs/index.js",
                         lineNumber: 21,
@@ -39277,7 +39277,7 @@ const KinriseTestimonial = () => <SpeechBubble backgroundColour='byldGold' textC
                                                         lineNumber: 42,
                                                         columnNumber: 70
                                                     }, undefined),
-                                                    "Commercial property carbon usage reporting is expensive, slow to gather and error-prone. This means organisations frequently act on bad data and waste money."
+                                                    "Commercial carbon usage reporting is expensive, slow to gather and error-prone. This means organisations frequently act on bad data and waste money."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/pages/CaseStudies/index.js",
